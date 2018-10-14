@@ -13,14 +13,17 @@ It supports:
   <img src="https://raw.githubusercontent.com/MichaelLeachim/reagent_autocomplete/master/images/right_arrow.gif" style="text-align:center;"></img>
 * Complete, if there is only a single option
   <img src="https://raw.githubusercontent.com/MichaelLeachim/reagent_autocomplete/master/images/complete_single.gif" style="text-align:center;"></img>
-* Optional forbid auto completing if there are no options
-* Styling and framework agnostic
+* *Optional* forbid complete if there are no options
+* Customizable styling and no framework dependency
 
 ## Usage
 
 ### Getting started
 
-This set up will yield the same result as on screenshot. 
+Add dependency to the project.clj
+[![Clojars Project](https://img.shields.io/clojars/v/thereisnodot/reagent_autocomplete.svg)](https://clojars.org/thereisnodot/reagent_autocomplete)
+
+Then. This set up should yield the same result as on the screenshot
 
 ```clojure
 
@@ -83,7 +86,10 @@ Function that renders autocomplete dropdown list.
 ```clojure
 {:render-fn
   (fn [cur-input selected? text]
-    [:div.reagent-autocomplete-item {:style {:padding "0.5em" :background (if  selected? "#dcdbfa" "white") :font-size "1em" :cursor "pointer"}}
+    [:div.reagent-autocomplete-item 
+      {:style {:padding "0.5em"
+               :background (if  selected? "#dcdbfa" "white")
+               :font-size "1em" :cursor "pointer"}}
     [:span cur-input]
     [:b (apply str (drop (count cur-input) text))]])}
 ```
@@ -106,7 +112,7 @@ only when the policy matches. (I.e. search can be performed)
 If FN is validated and matches policy, this function will be called. 
 After this call the app state will be reset. 
 
-```
+```clojure
 {:submit-fn
   (fn [data]
     (.log js/console "Submitted the following: " data))}
@@ -114,8 +120,10 @@ After this call the app state will be reset.
 
 ##### Validate input
 Default is 
+
 ```clojure
-(fn [data] true)
+{:validate-fn
+  (fn [data] true)}
 ```
 
 ##### Compare input
@@ -137,17 +145,27 @@ Defaults are these.
 
 ```clojure 
   {:dropdown-style
-   {:position "absolute" :right "0" :left "0"   :top "4em" :box-shadow "grey 1px 2px 1px 0px" :background "white" :overflow "hidden"  :border "none" :z-index "999"}
+   {:position "absolute" :right "0" :left "0" 
+    :top "4em" :box-shadow "grey 1px 2px 1px 0px" 
+    :background "white" :overflow "hidden"  :border "none" :z-index "999"}
+    
    :input-style
-   {:width "100%" :height "2em" :font-size "1.5em" :padding-left "10px" :background "transparent" :border "none"}
+   {:width "100%" :height "2em" :font-size "1.5em"
+    :padding-left "10px" :background "transparent" :border "none"}
+    
    :background-input-style
-   {:width "100%" :height "2em" :font-size "1.5em" :padding-left "10px" :color "gray" :position "absolute" :top "0" :right "0" :left "0" :bottom "0" :z-index "-1" :background "white"
-    :border "none"}
+   {:width "100%" :height "2em" :font-size "1.5em" :padding-left "10px"
+    :color "gray" :position "absolute" :top "0" :right "0" :left "0"
+    :bottom "0" :z-index "-1" :background "white" :border "none"}
+    
    :click-submit-style
    {:position "absolute" :right "0" :top "0.3em" :padding "0.5em"}
+   
    :parent-div-style
    {:position "relative" :box-shadow "1px 1px 1px gray"}
-   :general-style ".reagent-autocomplete-input:focus{outline:none;}.reagent-autocomplete-item:hover{background:#dcdbfa !important;}"}
+   
+   :general-style ".reagent-autocomplete-input:focus{outline:none;}
+     .reagent-autocomplete-item:hover{background:#dcdbfa !important;}"}
 ```
 
 ## License
