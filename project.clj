@@ -1,4 +1,4 @@
-(defproject reagent_autocomplete "0.1.0-SNAPSHOT"
+(defproject org.clojars.thereisnodot/reagent_autocomplete "0.1.0-SNAPSHOT"
   :description "A simple pure ClojureScript autocomplete widget"
   :url "https://github.com/MichaelLeachim/reagent_autocomplete"
   :license {:name "MIT"}
