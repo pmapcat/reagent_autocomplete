@@ -21,6 +21,7 @@ It supports:
 ### Getting started
 
 Add dependency to the project.clj
+
 [![Clojars Project](https://img.shields.io/clojars/v/thereisnodot/reagent_autocomplete.svg)](https://clojars.org/thereisnodot/reagent_autocomplete)
 
 Then. This set up should yield the same result as on the screenshot
