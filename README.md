@@ -9,12 +9,9 @@ It supports:
 * Autocomplete current option with Right arrow or Tab
 * Complete, if there is only a single option
 * Optional forbid auto completing if there are no options
-* Easy styling and  integration with frameworks
-
+* Easy styling and frameworks agnostic
 
 ## Usage
-
-
 
 
 The following parameters are available
