@@ -1,6 +1,6 @@
 # Reagent autocomplete widget
 
-[![Clojars Project](https://clojars.org/thereisnodot/reagent_autocomplete/latest-version.svg)
+[![Clojars Project](https://clojars.org/thereisnodot/reagent_autocomplete/latest-version.svg)](https://clojars.org/thereisnodot/reagent_autocomplete)
 
 <img src="https://raw.githubusercontent.com/MichaelLeachim/reagent_autocomplete/master/images/capture.png" style="text-align:center;"></img>
 
