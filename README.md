@@ -1,5 +1,7 @@
 # reagent_autocomplete WIP
 
+[![Clojars Project](https://img.shields.io/clojars/v/org.clojars.thereisnodot/reagent_autocomplete.svg)](https://clojars.org/org.clojars.thereisnodot/reagent_autocomplete)
+
 Reagent autocomplete is a  simple **Reagent** autocomplete widget. 
 It supports:
 
