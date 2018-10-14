@@ -7,12 +7,12 @@
 Reagent autocomplete is a  **Reagent** autocomplete widget. 
 It supports:
 
-* Cycling through options with Tab, Up and Down arrows
-  <img src="https://raw.githubusercontent.com/MichaelLeachim/reagent_autocomplete/master/images/cycling.gif" style="text-align:center;"></img>
-* Autocomplete current option with Right arrow or Tab
-  <img src="https://raw.githubusercontent.com/MichaelLeachim/reagent_autocomplete/master/images/right_arrow.gif" style="text-align:center;"></img>
-* Complete, if there is only a single option
-  <img src="https://raw.githubusercontent.com/MichaelLeachim/reagent_autocomplete/master/images/complete_single.gif" style="text-align:center;"></img>
+* Cycling through options with Tab, Up and Down arrows </br>
+  <img src="https://raw.githubusercontent.com/MichaelLeachim/reagent_autocomplete/master/images/cycling.gif" style="max-width:50%"></img>
+* Autocomplete current option with Right arrow or Tab </br>
+  <img src="https://raw.githubusercontent.com/MichaelLeachim/reagent_autocomplete/master/images/right_arrow.gif" style="max-width:50%"></img>
+* Complete, if there is only a single option </br>
+  <img src="https://raw.githubusercontent.com/MichaelLeachim/reagent_autocomplete/master/images/complete_single.gif" style="max-width:50%"></img>
 * *Optional* forbid complete if there are no options
 * Customizable styling and no framework dependency
 
