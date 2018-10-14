@@ -1,6 +1,6 @@
 # Reagent autocomplete widget
 
-[![Clojars Project](https://img.shields.io/clojars/v/thereisnodot/reagent_autocomplete.svg)](https://clojars.org/thereisnodot/reagent_autocomplete)
+[![Clojars Project](https://clojars.org/thereisnodot/reagent_autocomplete/latest-version.svg)
 
 <img src="https://raw.githubusercontent.com/MichaelLeachim/reagent_autocomplete/master/images/capture.png" style="text-align:center;"></img>
 
@@ -22,7 +22,7 @@ It supports:
 
 Add dependency to the project.clj
 
-[![Clojars Project](https://img.shields.io/clojars/v/thereisnodot/reagent_autocomplete.svg)](https://clojars.org/thereisnodot/reagent_autocomplete)
+[![Clojars Project](https://clojars.org/thereisnodot/reagent_autocomplete/latest-version.svg)](https://clojars.org/thereisnodot/reagent_autocomplete)
 
 Then. This set up should yield the same result as on the screenshot
 
