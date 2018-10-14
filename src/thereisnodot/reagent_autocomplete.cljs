@@ -5,7 +5,7 @@
 ;; @ All rights reserved.                                                               @
 ;; @@@@@@ At 2018-14-10 14:25 <mklimoff222@gmail.com> @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-(ns org.clojars.thereisnodot.reagent_autocomplete.core
+(ns thereisnodot.reagent_autocomplete
   (:require [reagent.core :as reagent]
             [clojure.string :as cljs-string]))
 
